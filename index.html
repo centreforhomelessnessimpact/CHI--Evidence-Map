@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Maps</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <style media="screen">
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+
+      h2,
+      h3 {
+      margin: 10px;
+      font-size: 1.2em;
+      }
+
+      h3 {
+      font-size: 1em;
+      }
+
+      #map {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div id='map' style=''></div>
+    <script>
+    mapboxgl.accessToken =
+  "pk.eyJ1IjoicmMzIiwiYSI6ImNlTWkwODAifQ.Ekx8PkIebxZdaZxksxz2BA";
+var map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/rc3/cjffxvy9wb3ou2snutp645m00/"
+});
+</script>
+  </body>
+</html>
